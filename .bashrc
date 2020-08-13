@@ -120,13 +120,12 @@ alias config='/usr/bin/git --git-dir=$HOME/dotFiles/ --work-tree=$HOME'
 alias g='git'
 alias gs='git status'
 
-. ~/z.sh
-. ~/fancy-bash-prompt.sh
-
 export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH=$PATH:$HOME/.git-radar
-export PS1="$PS1\$(git-radar --bash --fetch)"
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
+. ~/fancy-bash-prompt.sh
+
+. ~/z.sh
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 neofetch
+
