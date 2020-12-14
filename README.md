@@ -1,4 +1,4 @@
-# homeConfigs
+# dotFiles
 Linux dot file configuration
 
 ### On a new machine
