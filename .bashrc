@@ -88,6 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls='lsd -l'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -116,9 +117,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias config='/usr/bin/git --git-dir=$HOME/dotFiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotFiles/ --work-tree=$HOME'
 alias g='git'
 alias gs='git status'
+config config --local status.showUntrackedFiles no
 
 export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH=$PATH:$HOME/.git-radar
